@@ -9,7 +9,7 @@
 
 - name: Checkout sentry self hosted docker-compose project
   git:
-    repo: https://github.com/getsentry/onpremise.git
+    repo: "{{ sentry_git_repo }}"
     version: "{{ sentry_version }}"
     dest: "{{ sentry_docker_compose_project_folder }}"
     force: true
